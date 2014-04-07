@@ -30,6 +30,29 @@ namespace arkitektum.kommit.noark.tjeneste.Controllers
         /// <returns>Liste med arkivskapere</returns>
         public IEnumerable<Arkivskaper> GetArkivskapers()
         {
+
+
+
+            foreach ( Arkivskaper a in db.Arkivskapers)
+            {
+                a.href = Url.Route("Arkivskaper",
+                      new
+                      {
+                          id = a.systemID
+                      });
+                
+                var visArkiv = new Link
+                {
+                    rel = "ArkivListe",
+                    href = Url.Route("Arkiv",
+                      new
+                      {
+                      })
+                };
+
+                a.Links.Add(visArkiv);
+
+            }
             return db.Arkivskapers.AsEnumerable();
         }
 

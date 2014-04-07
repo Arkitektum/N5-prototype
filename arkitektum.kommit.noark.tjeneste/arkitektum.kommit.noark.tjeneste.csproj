@@ -161,14 +161,20 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Models\Rest\Generert.cs" />
+    <Compile Include="Models\LinkedResourceCollection.cs" />
+    <Compile Include="HalXmlMediaTypeFormatter.cs" />
     <Compile Include="Controllers\ArkivController.cs" />
     <Compile Include="Controllers\ArkivdelController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ArkivskaperController.cs" />
     <Compile Include="Controllers\MappeController.cs" />
+    <Compile Include="Controllers\RootController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Link.cs" />
+    <Compile Include="Models\LinkedResource.cs" />
     <Compile Include="Models\arkitektum\kommit\noark\tjenesteContext.cs" />
     <Compile Include="Models\Arkivstruktur.cs" />
     <Compile Include="Models\BevaringOgKassasjon.cs" />

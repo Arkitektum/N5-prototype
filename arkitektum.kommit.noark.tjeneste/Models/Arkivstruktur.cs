@@ -73,7 +73,7 @@ namespace arkitektum.kommit.noark.tjeneste.Models.Arkivstruktur
         public List<Registrering> registrering { get; set; }
     }
 
-    public class Arkivenhet
+    public class Arkivenhet: LinkedResource
     {
         [Key]
         public string systemID { get; set; }
@@ -202,9 +202,9 @@ namespace arkitektum.kommit.noark.tjeneste.Models.Arkivstruktur
         public string konverteringskommentar { get; set; }
     }
 
-    public class Kryssreferanse
-    {
-    }
+    //public class Kryssreferanse
+    //{
+    //}
 
     public class Mappe : Arkivenhet
     {
@@ -226,7 +226,7 @@ namespace arkitektum.kommit.noark.tjeneste.Models.Arkivstruktur
         public string referanseForelderMappe { get; set; }
         public List<Registrering> registrering { get; set; }
         public List<Merknad> merknad { get; set; }
-        public List<Kryssreferanse> kryssreferanse { get; set; }
+        //public List<Kryssreferanse> kryssreferanse { get; set; }
         //undermapper
     }
 

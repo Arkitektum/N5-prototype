@@ -16,6 +16,11 @@ namespace arkitektum.kommit.noark.tjeneste
     {
         protected void Application_Start()
         {
+            //arkitektum.kommit.noark.tjeneste.Models.arkitektum.kommit.noark.tjenesteContext db = new Models.arkitektum.kommit.noark.tjenesteContext();
+            //db.Database.CreateIfNotExists();
+
+            //System.Data.Entity.Database.SetInitializer(new System.Data.Entity.DropCreateDatabaseIfModelChanges<arkitektum.kommit.noark.tjeneste.Models.arkitektum.kommit.noark.tjenesteContext>());
+
             AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);

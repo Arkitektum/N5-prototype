@@ -12,10 +12,11 @@ namespace arkitektum.kommit.noark.tjeneste.Models.arkitektum.kommit.noark
         // code to the Application_Start method in your Global.asax file.
         // Note: this will destroy and re-create your database with every model change.
         // 
-        // System.Data.Entity.Database.SetInitializer(new System.Data.Entity.DropCreateDatabaseIfModelChanges<arkitektum.kommit.noark.tjeneste.Models.arkitektum.kommit.noark.tjenesteContext>());
+        
 
         public tjenesteContext() : base("name=tjenesteContext")
         {
+            
         }
 
         public DbSet<Arkivskaper> Arkivskapers { get; set; }
